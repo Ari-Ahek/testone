@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosamudianaede Ahekobuwa | Prints</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Nosamudianaede Ahekobuwa</a></div>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                
+                <li><a href="about.html" >About</a></li>
+                
+                <li><a href="paintings.html" >Paintings</a></li>
+                
+                <li><a href="prints.html" class="active">Prints</a></li>
+                
+                <li><a href="models.html" >Models</a></li>
+                
+                <li><a href="essays.html" >Essays</a></li>
+                
+                <li><a href="newsletter.html" >Newsletter</a></li>
+                
+                <li><a href="contact.html" >Contact</a></li>
+                
+                <li><a href="checkout.html" id="cart-link" >Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="page-content" class="content-section">
+            <h2>Prints</h2>
+            
+            
+            <div class="grid" id="prints-grid">
+                <!-- Items will be loaded here by main.js -->
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nosamudianaede Ahekobuwa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Pass page-specific context to JS
+        const PAGE_CONTEXT = {
+            currentPage: "Prints",
+            hidePrices: false
+        };
+    </script>
+    <script src="gallery_data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

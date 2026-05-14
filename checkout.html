@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosamudianaede Ahekobuwa | Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Nosamudianaede Ahekobuwa</a></div>
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                
+                <li><a href="about.html" >About</a></li>
+                
+                <li><a href="paintings.html" >Paintings</a></li>
+                
+                <li><a href="prints.html" >Prints</a></li>
+                
+                <li><a href="models.html" >Models</a></li>
+                
+                <li><a href="essays.html" >Essays</a></li>
+                
+                <li><a href="newsletter.html" >Newsletter</a></li>
+                
+                <li><a href="contact.html" >Contact</a></li>
+                
+                <li><a href="checkout.html" id="cart-link" class="active">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="page-content" class="content-section">
+            <h2>Checkout</h2>
+            
+            
+            <div id="checkout-container">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Size</th>
+                            <th>Price</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Cart items will be loaded here -->
+                    </tbody>
+                </table>
+                <div class="cart-total">
+                    Total: <span id="cart-total-price">$0.00</span>
+                </div>
+                <button id="send-order">Send Order</button>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nosamudianaede Ahekobuwa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Pass page-specific context to JS
+        const PAGE_CONTEXT = {
+            currentPage: "Checkout",
+            hidePrices: false
+        };
+    </script>
+    <script src="gallery_data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
